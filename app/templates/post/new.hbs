@@ -1,0 +1,14 @@
+<!-- bugs/new !-->
+<span class="label label-default">Nuevo bug</span>
+<div>
+    Title: {{input value=model.title}}
+</div>
+<div>
+    Description: {{textarea value=model.body}}
+</div>
+<div>
+    <button {{action 'save' model}}>Save</button>
+</div>
+
+
+{{outlet}}

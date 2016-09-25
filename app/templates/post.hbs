@@ -1,0 +1,13 @@
+<!-- app/templates/posts.hbs -->
+<h2>Lista de Post</h2>
+{{#each model as |post|}}
+    <ul>
+      <li>
+        {{post.title}}:  {{post.body}}
+    </li>
+    </ul>
+{{/each}}
+
+{{#link-to 'post.new' }}<a href="">Crear un post</a>{{/link-to}}
+
+{{outlet}}
